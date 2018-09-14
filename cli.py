@@ -17,6 +17,7 @@ def check_barcodes(fpr_path = check_barcodes_config.fpr_path,
     check_barcodes_config.collision_threshold=collision_threshold
     check_barcodes_config.collision_operator=collision_operator
 
+    # noinspection PyUnresolvedReferences
     import tasks.check_barcodes.check_barcodes
 
 

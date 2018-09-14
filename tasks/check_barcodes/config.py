@@ -1,4 +1,6 @@
 import operator
+
+# noinspection PyUnresolvedReferences
 from loaders.config import *
 
 collision_threshold = 2
