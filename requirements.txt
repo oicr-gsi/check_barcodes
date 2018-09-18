@@ -8,6 +8,7 @@ ipython==6.5.0
 ipython-genutils==0.2.0
 jedi==0.12.1
 locket==0.2.0
+more-itertools==4.3.0
 numpy==1.15.1
 pandas==0.23.4
 parso==0.3.1
@@ -18,7 +19,9 @@ pip-autoremove==0.9.1
 pockets==0.6.2
 prompt-toolkit==1.0.15
 ptyprocess==0.6.0
+py==1.6.0
 Pygments==2.2.0
+pytest==3.8.0
 python-dateutil==2.7.3
 pytz==2018.5
 simplegeneric==0.8.1
