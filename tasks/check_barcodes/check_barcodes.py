@@ -1,20 +1,13 @@
-import logging
-import sys
 import time
 
 from filters.barcode import get_collisions
 from loaders.file_provenance import load_file_provenance
 from tasks.check_barcodes import config
-
-log = logging.getLogger('')
-logging.basicConfig(
-    level=logging.getLevelName(logging.INFO),
-    format="[%(asctime)s] %(levelname)s %(message)s",
-    datefmt="%H:%M:%S", stream=sys.stdout)
+from utils.logging import log
 
 ## load fpr
 start_time = time.time()
-log.info('Loading file provenance report from {}'.format(config.fpr_path))
+log.info('Loading file provenance report from: {}'.format(config.fpr_path))
 fpr = load_file_provenance(config.fpr_path)
 log.info('Completed loading file provenance report in {:.1f}s'.format(time.time() - start_time))
 
